@@ -52,9 +52,10 @@ Detalles completos en [CASE_BRIEF.md § 5](./CASE_BRIEF.md).
 
 ## Contacto
 
-- **Dudas operativas**: revisa el email de invitación que recibiste
+- **Dudas operativas**: ogaspar@oceloteminerals.com
 - **Dudas técnicas**: no se responden — son parte de la evaluación
 
 Éxitos.
 
-— Equipo Sun Valley Investment
+— Oscar Gaspar Alvarez
+Lead AI · Sun Valley Investment

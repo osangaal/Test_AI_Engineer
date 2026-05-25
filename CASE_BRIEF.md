@@ -203,10 +203,11 @@ Esta sesión es el filtro principal contra abuso de LLM y para verificar profund
 
 ## 11. Contacto
 
-Dudas **operativas** (problemas con el link de Mineros, formato de entrega): `{{contacto-operativo}}`
+Dudas **operativas** (problemas con el link de Mineros, formato de entrega): **ogaspar@oceloteminerals.com**
 
 Dudas **técnicas**: no se responden — son parte de la evaluación.
 
 **Éxitos.**
 
-— Equipo Sun Valley Investment
+— Oscar Gaspar Alvarez
+Lead AI · Sun Valley Investment
