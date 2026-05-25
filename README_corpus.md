@@ -1,58 +1,58 @@
 # Corpus: MineSight DD
 
-A diferencia de un test que entrega un Drive con PDFs estáticos, en este test el **corpus se construye automáticamente** desde la web de relación con inversionistas de **Mineros S.A.** (Colombia).
+Unlike a test that hands you a Drive folder with static PDFs, this test expects the **corpus to be built automatically** from the investor relations page of **Mineros S.A.** (Colombia).
 
 ---
 
-## Fuente única del corpus
+## Single corpus source
 
-**Página de informes financieros de Mineros**:
+**Mineros financial reports page**:
 > https://www.mineros.com.co/es-co/inversionistas/informes-financieros
 
-La página agrupa los informes por **año (2021-2026)** y por **trimestre (Q1, Q2, Q3, Q4)** más el **Formulario de Información Anual** por año.
+The page groups reports by **year (2021-2026)** and by **quarter (Q1, Q2, Q3, Q4)**, plus the **Annual Information Form** for each year.
 
-El candidato debe descargar programáticamente **todos los PDFs disponibles** desde esta URL. Ver detalles en `CASE_BRIEF.md`, sección **Bloque 1: Pipeline de adquisición automatizada**.
-
----
-
-## Procesamiento
-
-Aunque la descarga es de todos los años, el procesamiento (extracción + consolidación + dashboard) se ejecuta **únicamente sobre los 4 trimestres de 2025**. El código debe estar diseñado para procesar cualquier año cambiando un parámetro. Esto evalúa criterio de ingeniería (no hardcodeo).
+The candidate must programmatically download **all available PDFs** from this URL. Full details in `CASE_BRIEF.md`, section **Block 1: Automated acquisition pipeline**.
 
 ---
 
-## Idioma
+## Processing scope
 
-Los informes de Mineros están en **español**. El candidato debe configurar herramientas de extracción y, si usa LLMs, modelos que manejen español correctamente.
+While the download covers all years, processing (extraction + consolidation + dashboard) runs **only on the four quarters of 2025**. The code must be designed to process any year by changing a parameter. This evaluates engineering judgment (no hardcoding).
 
 ---
 
-## Notas para el evaluador interno
+## Language
 
-### Antes de la primera evaluación
+Mineros' reports are in **Spanish**. The candidate must configure extraction tooling and, if using LLMs, models that properly handle Spanish.
 
-1. **Visitar manualmente la URL** y verificar que la página está viva, accesible, y que los enlaces a PDFs funcionan. Si la página fue rediseñada, ajustar `CASE_BRIEF.md` para reflejarlo.
-2. **Descargar manualmente los 4 PDFs trimestrales de 2025** (Q1-Q4) y leerlos para tener una vista propia de qué KPIs son razonables esperar.
-3. **Identificar 5 cifras de tabla específicas** (ej. producción de oz en Q1 2025, AISC en Q3 2025) que se usarán para verificar la precisión de la extracción del candidato. Ver `_internal/CALIBRATION_QUERIES.md`.
-4. **Documentar la versión del sitio** (fecha de visita) en este archivo.
+---
 
-### Si la página tiene anti-bot o JS dinámico
+## Notes for the internal evaluator
 
-- Si **tú no pudiste descargar fácilmente** los PDFs con un script simple (`requests` más `BeautifulSoup`), entonces **no descalifiques** a un candidato que documenta el mismo bloqueo y descarga manualmente.
-- Lo que sí debe penalizarse: que el candidato no intente nada (ni código, ni documentación).
+### Before the first evaluation
 
-### Histórico de verificación del corpus
+1. **Manually visit the URL** and verify the page is live, accessible, and that the PDF links work. If the page was redesigned, update `CASE_BRIEF.md` accordingly.
+2. **Manually download the four 2025 quarterly PDFs** (Q1-Q4) and read them to form your own view on which KPIs are reasonable to expect.
+3. **Identify 5 specific table figures** (e.g., gold production in Q1 2025, AISC in Q3 2025) that will be used to verify the precision of the candidate's extraction. See `_internal/CALIBRATION_QUERIES.md`.
+4. **Document the version of the site** (visit date) in this file.
 
-| Fecha visita | Quién verificó | Años visibles en la página | Notas / cambios en el sitio |
+### If the page has anti-bot or dynamic JS
+
+- If **you** could not easily download the PDFs with a simple script (`requests` plus `BeautifulSoup`), then **do not disqualify** a candidate who documents the same block and downloads manually.
+- What should be penalized: a candidate who attempts nothing (no code, no documentation).
+
+### Corpus verification log
+
+| Visit date | Verified by | Years visible on the page | Notes / site changes |
 |---|---|---|---|
-| ____ | ____ | 2021-2026 (al 2026-05-25) | rellenar antes del primer uso |
+| ____ | ____ | 2021-2026 (as of 2026-05-25) | fill before first use |
 
 ---
 
-## ¿Por qué Mineros y no una compañía internacional?
+## Why Mineros and not an international company?
 
-- **Realismo regional**: alineado al mercado donde opera Sun Valley.
-- **Idioma**: los analistas de Sun Valley trabajan en español; el sistema debe funcionar en español.
-- **Tamaño accesible**: el corpus de Mineros es manejable en 3 días, a diferencia de mineras majors con miles de páginas.
-- **Datos públicos reales**: cifras verificables, no inventadas.
-- **Estructura clara**: la página agrupa informes por año y trimestre, ideal para evaluar un pipeline de descarga estructurado.
+- **Regional realism**: aligned with the market Sun Valley operates in.
+- **Language**: Sun Valley analysts work in Spanish; the system should function in Spanish.
+- **Manageable size**: the Mineros corpus is tractable in 3 days, unlike majors with thousands of pages.
+- **Real public data**: verifiable, non-invented figures.
+- **Clear structure**: the page organizes reports by year and quarter, ideal for evaluating a structured download pipeline.

@@ -1,61 +1,61 @@
-# Test Técnico: Ingeniero de IA
+# Technical Test: AI Engineer
 
 **Sun Valley Investment**
 
-Este repositorio contiene el material del caso técnico para la posición de **Ingeniero de IA, Especialista en desarrollo e implementación**.
+This repository contains the material for the technical case for the **AI Engineer, Development and Implementation Specialist** position.
 
 ---
 
-## Si eres el candidato
+## If you are the candidate
 
-Empieza por leer el **brief completo** del caso:
+Start by reading the full case **brief**:
 
 ### 📄 [CASE_BRIEF.md](./CASE_BRIEF.md)
 
-Ahí encontrarás:
-- El problema de negocio y el caso (**MineSight DD**)
-- Los 3 bloques a construir (descarga → extracción + KPIs → dashboard)
-- Entregables esperados
-- Rúbrica de evaluación con pesos
-- Reglas y plazo
+There you will find:
+- The business problem and the case (**MineSight DD**)
+- The 3 blocks to build (download → extraction + KPIs → dashboard)
+- Expected deliverables
+- Evaluation rubric with weights
+- Rules and timeline
 
-Información adicional sobre la fuente del corpus:
+Additional information about the corpus source:
 
 ### 📚 [README_corpus.md](./README_corpus.md)
 
 ---
 
-## Resumen rápido
+## Quick summary
 
 | | |
 |---|---|
-| **Caso** | MineSight DD: pipeline de extracción + dashboard de KPIs de inversión minera |
-| **Sistema** | (1) Descarga automática de informes → (2) Extracción y consolidación de KPIs → (3) Dashboard gerencial |
-| **Plazo** | 3 días calendario |
-| **Trabajo estimado** | 8-12 horas efectivas |
-| **Fuente del corpus** | [Informes financieros de Mineros S.A.](https://www.mineros.com.co/es-co/inversionistas/informes-financieros) |
-| **Idioma del corpus** | Español |
-| **Procesamiento** | Solo 4 Qs de 2025, pero el código debe ser reproducible para cualquier año |
-| **Stack LLM** | Libre. Incluye opciones open-source si quieres evitar costos de API |
+| **Case** | MineSight DD: extraction pipeline + KPI dashboard for mining investment |
+| **System** | (1) Automated report download → (2) KPI extraction and consolidation → (3) Executive dashboard |
+| **Deadline** | 3 calendar days |
+| **Estimated effort** | 8-12 hours |
+| **Corpus source** | [Mineros S.A. financial reports](https://www.mineros.com.co/es-co/inversionistas/informes-financieros) |
+| **Corpus language** | Spanish |
+| **Processing scope** | Only Q1-Q4 2025, but the code must be reproducible for any year |
+| **LLM stack** | Free choice. Open-source options available if you want to avoid API costs |
 
 ---
 
-## Cómo entregar
+## How to deliver
 
-1. **Repositorio Git privado** propio (no en este repo) con tu solución. Invita como colaborador a la cuenta que se te indique en el email de invitación.
-2. **Reporte** dentro de tu repo: `docs/REPORT.md`
-3. **Presentación** (PDF) dentro de tu repo: `docs/slides.pdf`
+1. **Private Git repository** of your own (not this repo) with your solution. Invite as collaborator the account indicated in the invitation email.
+2. **Report** inside your repo: `docs/REPORT.md`
+3. **Presentation** (PDF) inside your repo: `docs/slides.pdf`
 
-Detalles completos en la sección **Entregables** del [CASE_BRIEF.md](./CASE_BRIEF.md#5-entregables).
+Full details in the **Deliverables** section of [CASE_BRIEF.md](./CASE_BRIEF.md#5-deliverables).
 
 ---
 
-## Contacto
+## Contact
 
-- **Dudas operativas**: ogaspar@oceloteminerals.com
-- **Dudas técnicas**: no se responden, son parte de la evaluación
+- **Operational questions**: ogaspar@oceloteminerals.com
+- **Technical questions**: we don't answer them, they are part of the evaluation
 
-Éxitos.
+Good luck.
 
 Oscar Gaspar Alvarez
 Lead AI · Sun Valley Investment
