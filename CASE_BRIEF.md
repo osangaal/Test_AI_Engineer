@@ -40,6 +40,11 @@ On the downloaded PDFs, you must:
 
 1. **Detect and extract all tables** in the reports. We expect you to use AI where it adds value (LLMs for parsing complex tables, vision models for image-based tables, etc.).
 2. **Propose a set of financial and operational KPIs** you consider relevant to evaluate Mineros as an investment. You have **full freedom** to decide which ones. We expect you to justify your choices.
+
+   **Why we give you this freedom**: what we want to evaluate is your ability to **face a new business problem and structure the solution yourself**: which indicators matter, how to research them, how to defend them. Day to day at Sun Valley you will solve similar problems for different business units across the organization; each time you will need to understand the context, propose the approach, and justify it. Here we want to see that **proactivity, creativity, and research**.
+
+   **On the use of LLMs (Claude, Gemini, ChatGPT) for ideation**: it is allowed and welcome to use them to understand the mining investment problem, explore which KPIs are industry-standard, or validate your reasoning. **If you do use them for that purpose**, include the prompts you used in a section of your report (`docs/REPORT.md`, "Use of LLMs in ideation"). This does not penalize you, on the contrary: we are interested in seeing **how you use these tools as an amplifier, not as a replacement for judgment**.
+
 3. **Consolidate those KPIs into a single normalized table** (CSV, Parquet, SQLite. Your choice of format).
 
 **Processing scope**: run block 2 **only on the four quarters of 2025** (Q1, Q2, Q3, Q4). This keeps the work manageable.
@@ -126,6 +131,7 @@ Required sections (2-4 pages):
 5. **Technical decisions and trade-offs**: extraction stack, LLM model choice if applicable, normalization across PDFs (column names may vary between quarters).
 6. **Known limitations**: what does NOT work yet.
 7. **Roadmap**: what you would prioritize with one additional week.
+8. **Use of LLMs in ideation** (if applicable): if you used Claude, Gemini, ChatGPT or similar to research the problem or shape your KPI choices, include the prompts here.
 
 ### 5.3 Presentation (PDF slides)
 
