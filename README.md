@@ -14,7 +14,7 @@ Empieza por leer el **brief completo** del caso:
 
 Ahí encontrarás:
 - El problema de negocio y el caso (**MineSight DD**)
-- Requerimientos funcionales y no funcionales
+- Los 3 bloques a construir (descarga → extracción + KPIs → dashboard)
 - Entregables esperados
 - Rúbrica de evaluación con pesos
 - Reglas y plazo
@@ -29,11 +29,13 @@ Información adicional sobre la fuente del corpus:
 
 | | |
 |---|---|
-| **Caso** | MineSight DD — Asistente de Due Diligence para inversión minera |
+| **Caso** | MineSight DD — pipeline de extracción + dashboard de KPIs de inversión minera |
+| **Sistema** | (1) Descarga automática de informes → (2) Extracción y consolidación de KPIs → (3) Dashboard gerencial |
 | **Plazo** | 3 días calendario |
-| **Trabajo estimado** | 6-10 horas efectivas |
+| **Trabajo estimado** | 8-12 horas efectivas |
 | **Fuente del corpus** | [Informes financieros de Mineros S.A.](https://www.mineros.com.co/es-co/inversionistas/informes-financieros) |
 | **Idioma del corpus** | Español |
+| **Procesamiento** | Solo 4 Qs de 2025 — pero el código debe ser reproducible para cualquier año |
 | **Stack LLM** | Libre — incluye opciones open-source si quieres evitar costos de API |
 
 ---
@@ -41,10 +43,10 @@ Información adicional sobre la fuente del corpus:
 ## Cómo entregar
 
 1. **Repositorio Git privado** propio (no en este repo) con tu solución — invita como colaborador a la cuenta que se te indique en el email de invitación.
-2. **Reporte de evaluación** dentro de tu repo: `docs/EVAL_REPORT.md`
+2. **Reporte** dentro de tu repo: `docs/REPORT.md`
 3. **Presentación** (PDF) dentro de tu repo: `docs/slides.pdf`
 
-Detalles completos en [CASE_BRIEF.md § 6](./CASE_BRIEF.md).
+Detalles completos en [CASE_BRIEF.md § 5](./CASE_BRIEF.md).
 
 ---
 

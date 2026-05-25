@@ -9,26 +9,21 @@ A diferencia de un test que entrega un Drive con PDFs estáticos, en este test e
 **Página de informes financieros de Mineros**:
 > https://www.mineros.com.co/es-co/inversionistas/informes-financieros
 
-El candidato debe descargar programáticamente desde esta URL. Ver detalles en `CASE_BRIEF.md` → **RF-0: Pipeline de adquisición**.
+La página agrupa los informes por **año (2021-2026)** y por **trimestre (Q1, Q2, Q3, Q4)** + **Formulario de Información Anual** por año.
+
+El candidato debe descargar programáticamente **todos los PDFs disponibles** desde esta URL. Ver detalles en `CASE_BRIEF.md` → **Bloque 1: Pipeline de adquisición automatizada**.
 
 ---
 
-## ¿Qué tipos de documentos hay disponibles?
+## Procesamiento
 
-La página de Mineros publica habitualmente:
-
-- **Informes Anuales** (PDF, ~100-200 págs/año)
-- **Informes Trimestrales de Resultados** (PDF, ~20-40 págs)
-- **Resúmenes / Earnings releases** (PDF cortos)
-- Potencialmente reportes técnicos o de sostenibilidad
-
-El candidato debe descargar **mínimo 5 documentos** — un mix de anual + trimestrales recientes.
+Aunque la descarga es de todos los años, el procesamiento (extracción + consolidación + dashboard) se ejecuta **únicamente sobre los 4 trimestres de 2025**. El código debe estar diseñado para procesar cualquier año cambiando un parámetro — esto evalúa criterio de ingeniería (no hardcodeo).
 
 ---
 
 ## Idioma
 
-Los informes de Mineros están en **español**. El candidato debe configurar embeddings y prompts en consecuencia (modelos multilingual u OpenAI/Anthropic que manejan español nativamente).
+Los informes de Mineros están en **español**. El candidato debe configurar herramientas de extracción y, si usa LLMs, modelos que manejen español correctamente.
 
 ---
 
@@ -37,10 +32,9 @@ Los informes de Mineros están en **español**. El candidato debe configurar emb
 ### Antes de la primera evaluación
 
 1. **Visitar manualmente la URL** y verificar que la página está viva, accesible, y que los enlaces a PDFs funcionan. Si la página fue rediseñada, ajustar `CASE_BRIEF.md` para reflejarlo.
-2. **Descargar manualmente** los mismos PDFs que esperamos que descargue el candidato (~5-10 informes recientes). Esto es necesario para:
-   - Resolver manualmente las queries de calibración (ver `CALIBRATION_QUERIES.md`)
-   - Tener un baseline propio para comparar
-3. **Documentar la versión del sitio** (fecha de visita) en este archivo. Si la página cambia mucho, las queries de calibración pueden quedar desactualizadas.
+2. **Descargar manualmente los 4 PDFs trimestrales de 2025** (Q1-Q4) y leerlos para tener una vista propia de qué KPIs son razonables esperar.
+3. **Identificar 5 cifras de tabla específicas** (ej. producción de oz en Q1 2025, AISC en Q3 2025) que se usarán para verificar la precisión de la extracción del candidato. Ver `_internal/CALIBRATION_QUERIES.md`.
+4. **Documentar la versión del sitio** (fecha de visita) en este archivo.
 
 ### Si la página tiene anti-bot / JS dinámico
 
@@ -49,9 +43,9 @@ Los informes de Mineros están en **español**. El candidato debe configurar emb
 
 ### Histórico de verificación del corpus
 
-| Fecha visita | Quién verificó | # documentos descargados | Notas / cambios en el sitio |
+| Fecha visita | Quién verificó | Años visibles en la página | Notas / cambios en el sitio |
 |---|---|---|---|
-| ____ | ____ | ____ | rellenar antes del primer uso |
+| ____ | ____ | 2021-2026 (al 2026-05-25) | rellenar antes del primer uso |
 
 ---
 
@@ -61,3 +55,4 @@ Los informes de Mineros están en **español**. El candidato debe configurar emb
 - **Idioma**: los analistas de Sun Valley trabajan en español; el sistema debe funcionar en español.
 - **Tamaño accesible**: el corpus de Mineros es manejable en 3 días, a diferencia de mineras majors con miles de páginas.
 - **Datos públicos reales**: cifras verificables, no inventadas.
+- **Estructura clara**: la página agrupa informes por año y trimestre, ideal para evaluar un pipeline de descarga estructurado.
