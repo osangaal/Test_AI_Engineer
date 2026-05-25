@@ -34,7 +34,7 @@ Cada respuesta debe incluir **respuesta + cita (documento, página)**. Si la inf
 - **Plazo de entrega:** **3 días calendario** desde la recepción de este documento
 
 ### Stack
-Eres libre de elegir librerías, frameworks y proveedor de LLM (OpenAI, Azure OpenAI, Anthropic, modelos open-source). **Sun Valley reembolsa hasta USD 20** en costos de API contra factura.
+Eres libre de elegir librerías, frameworks y proveedor de LLM (OpenAI, Azure OpenAI, Anthropic, o modelos open-source vía Ollama / HuggingFace). El costo de API corre por tu cuenta — si quieres minimizarlo, puedes usar modelos open-source locales o tiers gratuitos.
 
 ### Fuente del corpus
 **URL oficial de informes financieros de Mineros**:
@@ -181,7 +181,6 @@ Tu test será rechazado sin revisión profunda si ocurre cualquiera de:
 - **IA-assisted coding permitido** (Copilot, Cursor, ChatGPT). **Pero** debes poder defender cada decisión técnica en la sesión sincrónica.
 - **Documenta tus supuestos**. Si algo es ambiguo, decide tú y justifica.
 - **Honestidad sobre tiempo**: reporta horas reales en el README.
-- **Reembolso de API**: hasta USD 20 contra factura.
 - **Sobre el scraping**: respeta `robots.txt` y agrega `User-Agent` identificable. No ataques el sitio (delays razonables entre requests). Si el sitio bloquea, documenta y sigue adelante con descarga manual.
 
 ---

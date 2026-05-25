@@ -34,7 +34,7 @@ Información adicional sobre la fuente del corpus:
 | **Trabajo estimado** | 6-10 horas efectivas |
 | **Fuente del corpus** | [Informes financieros de Mineros S.A.](https://www.mineros.com.co/es-co/inversionistas/informes-financieros) |
 | **Idioma del corpus** | Español |
-| **Reembolso de API** | Hasta USD 20 contra factura |
+| **Stack LLM** | Libre — incluye opciones open-source si quieres evitar costos de API |
 
 ---
 
