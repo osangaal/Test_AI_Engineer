@@ -53,6 +53,6 @@ Mineros' reports are in **Spanish**. The candidate must configure extraction too
 
 - **Regional realism**: aligned with the market Sun Valley operates in.
 - **Language**: Sun Valley analysts work in Spanish; the system should function in Spanish.
-- **Manageable size**: the Mineros corpus is tractable in 3 days, unlike majors with thousands of pages.
+- **Manageable size**: the Mineros corpus is tractable in 4 days, unlike majors with thousands of pages.
 - **Real public data**: verifiable, non-invented figures.
 - **Clear structure**: the page organizes reports by year and quarter, ideal for evaluating a structured download pipeline.

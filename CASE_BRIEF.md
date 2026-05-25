@@ -64,6 +64,39 @@ The audience is **executive / investment decision-makers**, not technical. The v
 
 **Justify your format choice** in the report (why Streamlit over Gradio, why include a given chart, etc.).
 
+### Block 4: Enterprise architecture design (no code)
+
+Up to here you have built a working MVP over a single company (Mineros) and a single year. Now imagine Sun Valley wants to **take this system to production**, processing dozens of mining companies, covering several years of history, with multiple analysts using it simultaneously.
+
+Your task: design the architecture of that enterprise system. **You will NOT write code in this block**, it is purely theoretical / architectural. What we want to see is your **systems design judgment**.
+
+Your deliverable must address, in a short document (3-5 pages or 5-10 slides):
+
+1. **Architecture diagram**: draw the proposed architecture. Main components, data flow, integrations. Use whatever tool you prefer (Excalidraw, Mermaid, Lucidchart, draw.io, even a photo of a hand-drawn sketch works).
+
+2. **Cloud stack**: which provider and which specific services (PDF storage, pipeline orchestration, database, vector DB if applicable, observability, etc.).
+
+   **Sun Valley's preference: Azure**. It is the provider we already use internally, so an Azure-based design accelerates adoption. **Not mandatory**: if you propose AWS or GCP, perfectly valid as long as you justify why your proposal would be better for this case than the equivalent Azure option.
+
+3. **Deployment**: how you would deploy each component (Container Apps, AKS, Functions, App Service if going Azure; equivalents otherwise) and why.
+
+4. **AI components in production**: which models (Azure OpenAI, self-hosted, third-party), where they run, how they are versioned, what fallback strategy you have if the primary model goes down or shifts behavior.
+
+5. **Continuous quality evaluation**: how you ensure in production that extraction stays correct. Automated golden set? Human-in-the-loop sampling? Drift alerts? Business metrics?
+
+6. **Security and compliance**: secrets management, access control, query auditing (important for an investment fund).
+
+7. **Estimated cost**: order-of-magnitude monthly figure (USD/month) processing 20 companies and 50 active analysts.
+
+8. **Implementation roadmap**: in what phases you would move from the MVP you delivered to the enterprise system. What you would do in month 1, month 3, month 6.
+
+**Deliverable format**: separate file in your repo at `docs/ARCHITECTURE.md` or `docs/architecture.pdf`. Diagram embedded or linked.
+
+**What we are NOT evaluating here**:
+- We do not expect new code
+- We do not expect you to implement any of this
+- We do not expect the design to be perfect, we expect it to be **defensible**
+
 ---
 
 ## 3. Non-functional requirements
@@ -115,7 +148,8 @@ minesight-dd/
 │   └── processed/               # consolidated table
 └── docs/
     ├── REPORT.md                # see 5.2
-    └── slides.pdf               # see 5.3
+    ├── slides.pdf               # see 5.3
+    └── ARCHITECTURE.md          # see 5.4 (or architecture.pdf)
 ```
 
 Your README must include: run instructions, **real hours invested**, assumptions made, **limitations encountered while scraping** (if any), and **how to run the pipeline for another year**.
@@ -145,6 +179,12 @@ Between **6 and 10 slides**. Minimum structure:
 6. Limitations and roadmap
 7. **Estimated operating cost** if the system ran monthly
 
+### 5.4 Architecture document (`docs/ARCHITECTURE.md` or `docs/architecture.pdf`)
+
+Deliverable for Block 4. Short document (3-5 pages or 5-10 slides) covering the 8 points described in Block 4: architecture diagram, cloud stack (Azure preferred), deployment, AI components, continuous quality evaluation, security, estimated cost, and implementation roadmap.
+
+The diagram can be embedded in the document or linked (Excalidraw / Lucidchart / draw.io URL).
+
 ---
 
 ## 6. Evaluation rubric (100 pts + 15 bonus)
@@ -153,13 +193,14 @@ We share the weights so you can prioritize your effort:
 
 | Competency | Weight |
 |---|---|
-| A. Acquisition pipeline (robust download and organization) | **15 pts** |
-| B. Table extraction (precision and intelligent use of AI) | **25 pts** |
-| C. Proposed KPIs, business judgment, and normalization | **25 pts** |
-| D. Dashboard / visualization (usefulness for executive audience) | **15 pts** |
-| E. MLOps (Docker, packaging, multi-year reproducibility) | **10 pts** |
-| F. Code quality (modularity, tests, logs) | **5 pts** |
+| A. Acquisition pipeline (robust download and organization) | **12 pts** |
+| B. Table extraction (precision and intelligent use of AI) | **22 pts** |
+| C. Proposed KPIs, business judgment, and normalization | **22 pts** |
+| D. Dashboard / visualization (usefulness for executive audience) | **12 pts** |
+| E. MLOps (Docker, packaging, multi-year reproducibility) | **8 pts** |
+| F. Code quality (modularity, tests, logs) | **4 pts** |
 | G. Communication (report and slides) | **5 pts** |
+| H. Enterprise architecture design (Block 4) | **15 pts** |
 | Stretch goals (S-1 to S-5) | **+15 pts** |
 
 ---
@@ -176,8 +217,8 @@ We share the weights so you can prioritize your effort:
 
 ## 8. Timeline and delivery
 
-- **Estimated effort**: 8-12 hours of effective work
-- **Deadline**: **3 calendar days** from receipt of this document
+- **Estimated effort**: 10-15 hours of effective work
+- **Deadline**: **4 calendar days** from receipt of this document
 - **Delivery method**: email the recruiter with the repo link plus slides PDF attached (or a public link)
 
 ---

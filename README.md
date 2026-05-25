@@ -14,7 +14,7 @@ Start by reading the full case **brief**:
 
 There you will find:
 - The business problem and the case (**MineSight DD**)
-- The 3 blocks to build (download → extraction + KPIs → dashboard)
+- The 4 blocks to build: download → extraction + KPIs → dashboard → enterprise architecture design (theoretical)
 - Expected deliverables
 - Evaluation rubric with weights
 - Rules and timeline
@@ -29,10 +29,10 @@ Additional information about the corpus source:
 
 | | |
 |---|---|
-| **Case** | MineSight DD: extraction pipeline + KPI dashboard for mining investment |
-| **System** | (1) Automated report download → (2) KPI extraction and consolidation → (3) Executive dashboard |
-| **Deadline** | 3 calendar days |
-| **Estimated effort** | 8-12 hours |
+| **Case** | MineSight DD: extraction pipeline, KPI dashboard, and enterprise architecture design for mining investment |
+| **System** | (1) Automated report download → (2) KPI extraction and consolidation → (3) Executive dashboard → (4) Enterprise architecture design (theoretical, no code) |
+| **Deadline** | 4 calendar days |
+| **Estimated effort** | 10-15 hours |
 | **Corpus source** | [Mineros S.A. financial reports](https://www.mineros.com.co/es-co/inversionistas/informes-financieros) |
 | **Corpus language** | Spanish |
 | **Processing scope** | Only Q1-Q4 2025, but the code must be reproducible for any year |
@@ -45,6 +45,7 @@ Additional information about the corpus source:
 1. **Private Git repository** of your own (not this repo) with your solution. Invite as collaborator the account indicated in the invitation email.
 2. **Report** inside your repo: `docs/REPORT.md`
 3. **Presentation** (PDF) inside your repo: `docs/slides.pdf`
+4. **Architecture document** inside your repo: `docs/ARCHITECTURE.md` (Block 4 deliverable)
 
 Full details in the **Deliverables** section of [CASE_BRIEF.md](./CASE_BRIEF.md#5-deliverables).
 
