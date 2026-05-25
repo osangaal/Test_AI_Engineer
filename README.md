@@ -46,7 +46,7 @@ Información adicional sobre la fuente del corpus:
 2. **Reporte** dentro de tu repo: `docs/REPORT.md`
 3. **Presentación** (PDF) dentro de tu repo: `docs/slides.pdf`
 
-Detalles completos en [CASE_BRIEF.md § 5](./CASE_BRIEF.md).
+Detalles completos en la sección **Entregables** del [CASE_BRIEF.md](./CASE_BRIEF.md#5-entregables).
 
 ---
 
