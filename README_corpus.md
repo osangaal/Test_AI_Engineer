@@ -1,4 +1,4 @@
-# Corpus — MineSight DD
+# Corpus: MineSight DD
 
 A diferencia de un test que entrega un Drive con PDFs estáticos, en este test el **corpus se construye automáticamente** desde la web de relación con inversionistas de **Mineros S.A.** (Colombia).
 
@@ -9,15 +9,15 @@ A diferencia de un test que entrega un Drive con PDFs estáticos, en este test e
 **Página de informes financieros de Mineros**:
 > https://www.mineros.com.co/es-co/inversionistas/informes-financieros
 
-La página agrupa los informes por **año (2021-2026)** y por **trimestre (Q1, Q2, Q3, Q4)** + **Formulario de Información Anual** por año.
+La página agrupa los informes por **año (2021-2026)** y por **trimestre (Q1, Q2, Q3, Q4)** más el **Formulario de Información Anual** por año.
 
-El candidato debe descargar programáticamente **todos los PDFs disponibles** desde esta URL. Ver detalles en `CASE_BRIEF.md` → **Bloque 1: Pipeline de adquisición automatizada**.
+El candidato debe descargar programáticamente **todos los PDFs disponibles** desde esta URL. Ver detalles en `CASE_BRIEF.md`, sección **Bloque 1: Pipeline de adquisición automatizada**.
 
 ---
 
 ## Procesamiento
 
-Aunque la descarga es de todos los años, el procesamiento (extracción + consolidación + dashboard) se ejecuta **únicamente sobre los 4 trimestres de 2025**. El código debe estar diseñado para procesar cualquier año cambiando un parámetro — esto evalúa criterio de ingeniería (no hardcodeo).
+Aunque la descarga es de todos los años, el procesamiento (extracción + consolidación + dashboard) se ejecuta **únicamente sobre los 4 trimestres de 2025**. El código debe estar diseñado para procesar cualquier año cambiando un parámetro. Esto evalúa criterio de ingeniería (no hardcodeo).
 
 ---
 
@@ -36,9 +36,9 @@ Los informes de Mineros están en **español**. El candidato debe configurar her
 3. **Identificar 5 cifras de tabla específicas** (ej. producción de oz en Q1 2025, AISC en Q3 2025) que se usarán para verificar la precisión de la extracción del candidato. Ver `_internal/CALIBRATION_QUERIES.md`.
 4. **Documentar la versión del sitio** (fecha de visita) en este archivo.
 
-### Si la página tiene anti-bot / JS dinámico
+### Si la página tiene anti-bot o JS dinámico
 
-- Si **tú no pudiste descargar fácilmente** los PDFs con un script simple (`requests` + `BeautifulSoup`), entonces **no descalifiques** a un candidato que documenta el mismo bloqueo y descarga manualmente.
+- Si **tú no pudiste descargar fácilmente** los PDFs con un script simple (`requests` más `BeautifulSoup`), entonces **no descalifiques** a un candidato que documenta el mismo bloqueo y descarga manualmente.
 - Lo que sí debe penalizarse: que el candidato no intente nada (ni código, ni documentación).
 
 ### Histórico de verificación del corpus
